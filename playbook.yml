@@ -64,10 +64,6 @@
         apt:
             name: nodejs
             state: present
-    # -
-    #     name: 'Install process manager 2 globally'
-    #     command: |
-    #         npm install pm2 -g
     -   
         name: 'clone app repo from github...'
         git: 
@@ -93,12 +89,6 @@
           cmd: |
             cd /home/ubuntu/Store-Manager-React
             sudo npm run build            
-    # -   
-    #     name: 'Start the application server'
-    #     shell:
-    #       cmd: |
-    #         cd /home/ubuntu/Store-Manager-React
-    #         sudo pm2 start -f server.js
 
     -
         name: 'Add systemd service file'
