@@ -17,10 +17,10 @@ The Packer template file comprises of a json object that contains the following 
 
 #### Building the AMI with Packer
 Inorder to build an AMI with Packer, the following files must be present according to this project repository:
-packer.json - This file consists of the Packer template as discussed in the step above
-playbook.yml - This is an Ansible playbook YAML file that comprises of step by step instructions that are followed while provisioning the AMI. They are executed using a top-down approach
-ansible_installation.sh - Comprises of a function that contains a number of instructions to install ansible onto the Amazon machine image
-The packer.json file consists of  the variables section has aws_access_key and aws_secret_key which reads the keys from the .env file that should be created as explained in the setup step below
+- packer.json - This file consists of the Packer template as discussed in the step above
+- playbook.yml - This is an Ansible playbook YAML file that comprises of step by step instructions that are followed while provisioning the AMI. They are executed using a top-down approach
+- ansible_installation.sh - Comprises of a function that contains a number of instructions to install ansible onto the Amazon machine image
+- The packer.json file consists of  the variables section has aws_access_key and aws_secret_key which reads the keys from the .env file that should be created as explained in the setup step below
 
 #### Setting Up this project
 - Create an AWS account here https://aws.amazon.com if you do not have one
